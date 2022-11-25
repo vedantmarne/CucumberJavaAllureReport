@@ -1,0 +1,368 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-11-25T12:53:43.849Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1006200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsForHooks.HooksDemoSteps.setup2()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2991266400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsForHooks.HooksDemoSteps.browserSetup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Sample 1",
+        "description": "",
+        "id": "feature-to-demo-tags;sample-1",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsForHooks.HooksDemoSteps.tearDown2()"
+            }
+          },
+          {
+            "result": {
+              "duration": 16446104600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsForHooks.HooksDemoSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3013600,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2620900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepsForHooks.HooksDemoSteps.beforeSteps()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "user is on login page",
+            "match": {
+              "location": "StepsForHooks.HooksDemoSteps.user_is_on_login_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 978900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepsForHooks.HooksDemoSteps.afterSteps()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepsForHooks.HooksDemoSteps.beforeSteps()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "user enters username and password",
+            "match": {
+              "location": "StepsForHooks.HooksDemoSteps.user_enters_username_and_password()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepsForHooks.HooksDemoSteps.afterSteps()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1998900,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepsForHooks.HooksDemoSteps.beforeSteps()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "clicks on login button",
+            "match": {
+              "location": "StepsForHooks.HooksDemoSteps.clicks_on_login_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepsForHooks.HooksDemoSteps.afterSteps()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000300,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepsForHooks.HooksDemoSteps.beforeSteps()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is navigated to the home page",
+            "match": {
+              "location": "StepsForHooks.HooksDemoSteps.user_is_navigated_to_the_home_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepsForHooks.HooksDemoSteps.afterSteps()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-25T12:54:03.313Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsForHooks.HooksDemoSteps.setup2()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1075400500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsForHooks.HooksDemoSteps.browserSetup()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Sample 2",
+        "description": "",
+        "id": "feature-to-demo-tags;sample-2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsForHooks.HooksDemoSteps.tearDown2()"
+            }
+          },
+          {
+            "result": {
+              "duration": 310992700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsForHooks.HooksDemoSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepsForHooks.HooksDemoSteps.beforeSteps()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "user is on login page",
+            "match": {
+              "location": "StepsForHooks.HooksDemoSteps.user_is_on_login_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepsForHooks.HooksDemoSteps.afterSteps()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepsForHooks.HooksDemoSteps.beforeSteps()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "user enters username and password",
+            "match": {
+              "location": "StepsForHooks.HooksDemoSteps.user_enters_username_and_password()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1308400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepsForHooks.HooksDemoSteps.afterSteps()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1024000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepsForHooks.HooksDemoSteps.beforeSteps()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "clicks on login button",
+            "match": {
+              "location": "StepsForHooks.HooksDemoSteps.clicks_on_login_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepsForHooks.HooksDemoSteps.afterSteps()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4472500,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepsForHooks.HooksDemoSteps.beforeSteps()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "user is navigated to the home page",
+            "match": {
+              "location": "StepsForHooks.HooksDemoSteps.user_is_navigated_to_the_home_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepsForHooks.HooksDemoSteps.afterSteps()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Feature to demo tags",
+    "description": "",
+    "id": "feature-to-demo-tags",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/HooksDemo/HooksDemo.feature",
+    "tags": []
+  }
+]
