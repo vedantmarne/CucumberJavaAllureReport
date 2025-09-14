@@ -1,17 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="20.895">
-    <testcase classname="Feature to demo tags" name="Sample 1" time="19.461">
-        <system-out><![CDATA[Given user is on login page.................................................passed
-When user enters username and password......................................passed
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.353" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Check home page functionality" name="check logout link" time="0.118">
+<system-out><![CDATA[
+Given user is on login page.................................................passed
+When user enter username and password.......................................passed
 And clicks on login button..................................................passed
-Then user is navigated to the home page.....................................passed
+Then user is navigated to home page.........................................passed
+When user clicks on welcome link............................................passed
+Then logout link is displayed...............................................passed
 ]]></system-out>
-    </testcase>
-    <testcase classname="Feature to demo tags" name="Sample 2" time="1.401">
-        <system-out><![CDATA[Given user is on login page.................................................passed
-When user enters username and password......................................passed
+</testcase>
+<testcase classname="Check home page functionality" name="verify quick launch toolbar is present" time="0.005">
+<system-out><![CDATA[
+Given user is on login page.................................................passed
+When user enter username and password.......................................passed
 And clicks on login button..................................................passed
-Then user is navigated to the home page.....................................passed
+Then user is navigated to home page.........................................passed
+When user clicks on dashboard link..........................................passed
+Then quick launch toolbar is displayed......................................passed
 ]]></system-out>
-    </testcase>
+</testcase>
 </testsuite>
