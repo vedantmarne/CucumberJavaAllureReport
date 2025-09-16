@@ -6,8 +6,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>18</maven.compiler.source>
+		<maven.compiler.target>18</maven.compiler.target>
 	</properties>
 
 
@@ -17,7 +17,8 @@
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>7.14.0</version>
+			<version>7.18.1</version>
+			<scope>test</scope>
 		</dependency>
 
 
@@ -33,7 +34,7 @@
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>7.14.0</version>
+			<version>7.18.1</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -41,25 +42,28 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.0.0-alpha-5</version>
+			<version>4.25.0</version> <!-- latest stable -->
 		</dependency>
 
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>5.3.0</version>
+			<version>5.9.2</version> <!-- latest stable -->
 		</dependency>
 
-		<dependency>
-			<groupId>io.cucumber</groupId>
-			<artifactId>cucumber-testng</artifactId> <!-- or cucumber-junit if using JUnit -->
-			<version>7.18.1</version>
-		</dependency>
 
 		<dependency>
+
 			<groupId>io.qameta.allure</groupId>
 			<artifactId>allure-cucumber7-jvm</artifactId>
 			<version>2.29.0</version> <!-- latest stable -->
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>2.0.13</version>
 		</dependency>
 
 
@@ -70,9 +74,14 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.22.0</version>
+				<version>3.1.2</version>
 				<configuration>
-					<testFailureIgnore>true</testFailureIgnore>
+					<forkCount>0</forkCount> <!-- run in the same JVM -->
+					<reuseForks>false</reuseForks>
+					<includes>
+						<include>**/*Test.java</include>
+					</includes>
+					<failIfNoTests>false</failIfNoTests>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -99,6 +108,10 @@
 				<groupId>io.qameta.allure</groupId>
 				<artifactId>allure-maven</artifactId>
 				<version>2.12.0</version>
+				<configuration>
+					<resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
+					<reportDirectory>${project.build.directory}/site/allure-maven-plugin</reportDirectory>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
